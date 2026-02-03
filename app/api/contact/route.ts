@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     // Validate the request body
     const validatedData = contactSchema.parse(body);
 
-    const adminEmail = process.env.ADMIN_EMAIL || 'admin@reliantroofers.co.uk';
+    const adminEmail = process.env.ADMIN_EMAIL || 'info@royalroofworks.com';
     const fromEmail = process.env.FROM_EMAIL || 'noreply@reliantroofers.co.uk';
 
     // Format the email content
@@ -80,7 +80,7 @@ Thank you for contacting Reliant Roofers. We have received your enquiry and will
 Your Message:
 ${validatedData.message}
 
-If you have any urgent questions, please don't hesitate to call us on 01234 567 890.
+If you have any urgent questions, please don't hesitate to call us on 07393 121 621.
 
 Best regards,
 The Reliant Roofers Team

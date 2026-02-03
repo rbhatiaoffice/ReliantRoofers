@@ -30,7 +30,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <div className="h-12 w-12 bg-blue-900 rounded flex items-center justify-center text-white font-bold text-xl">
+              <div className="h-12 w-12 bg-slate-800 rounded flex items-center justify-center text-white font-bold text-xl">
                 RR
               </div>
               <span className="ml-3 text-xl font-bold text-gray-900">Reliant Roofers</span>
@@ -43,7 +43,7 @@ export default function Header() {
               if (item.submenu) {
                 return (
                   <div key={item.name} className="relative group">
-                    <button className="text-gray-700 hover:text-blue-900 px-3 py-2 text-sm font-medium transition-colors">
+                    <button className="text-gray-700 hover:text-slate-800 px-3 py-2 text-sm font-medium transition-colors">
                       {item.name}
                     </button>
                     <div className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -52,7 +52,7 @@ export default function Header() {
                           <Link
                             key={subItem.name}
                             href={subItem.href}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900"
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-slate-50 hover:text-slate-800"
                           >
                             {subItem.name}
                           </Link>
@@ -66,7 +66,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-900 px-3 py-2 text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-slate-800 px-3 py-2 text-sm font-medium transition-colors"
                 >
                   {item.name}
                 </Link>
@@ -74,7 +74,7 @@ export default function Header() {
             })}
             <Link
               href="/contact"
-              className="ml-4 bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition-colors flex items-center gap-2"
+              className="ml-4 bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-all shadow-md hover:shadow-lg flex items-center gap-2 font-semibold"
             >
               <Phone className="h-4 w-4" />
               Get Quote
@@ -85,7 +85,7 @@ export default function Header() {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-900 p-2"
+              className="text-gray-700 hover:text-slate-800 p-2"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -109,7 +109,7 @@ export default function Header() {
                           key={subItem.name}
                           href={subItem.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="block px-6 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-900"
+                          className="block px-6 py-2 text-sm text-gray-600 hover:bg-slate-50 hover:text-slate-800"
                         >
                           {subItem.name}
                         </Link>
@@ -122,7 +122,7 @@ export default function Header() {
                     key={item.name}
                     href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900"
+                    className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-slate-50 hover:text-slate-800"
                   >
                     {item.name}
                   </Link>
@@ -131,7 +131,7 @@ export default function Header() {
               <Link
                 href="/contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="block mt-4 mx-3 bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-800 text-center"
+                className="block mt-4 mx-3 bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 text-center font-semibold shadow-md"
               >
                 Get Quote
               </Link>

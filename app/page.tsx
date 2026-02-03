@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Award, Users, Clock, Shield } from 'lucide-react';
 
 export default function Home() {
@@ -31,22 +32,22 @@ export default function Home() {
 
   const whyChooseUs = [
     {
-      icon: <Award className="h-8 w-8 text-blue-900" />,
+      icon: <Award className="h-8 w-8 text-slate-800" />,
       title: 'Certified Professionals',
       description: 'Fully qualified and insured roofing specialists',
     },
     {
-      icon: <Clock className="h-8 w-8 text-blue-900" />,
+      icon: <Clock className="h-8 w-8 text-slate-800" />,
       title: 'Years of Experience',
       description: 'Over 15 years serving customers across the UK',
     },
     {
-      icon: <Shield className="h-8 w-8 text-blue-900" />,
+      icon: <Shield className="h-8 w-8 text-slate-800" />,
       title: 'Fully Insured',
       description: 'Comprehensive insurance coverage for your peace of mind',
     },
     {
-      icon: <Users className="h-8 w-8 text-blue-900" />,
+      icon: <Users className="h-8 w-8 text-slate-800" />,
       title: 'Trusted by Thousands',
       description: 'Satisfied customers throughout the UK',
     },
@@ -55,12 +56,12 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-gray-900 text-white">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Professional Roofing Services
-              <span className="block mt-2 text-blue-300">You Can Trust</span>
+              <span className="block mt-2 text-orange-400">You Can Trust</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
               Expert roofers providing quality pitched and flat roofing, repairs, and new construction 
@@ -69,14 +70,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-white text-blue-900 px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-all shadow-xl hover:shadow-2xl inline-flex items-center justify-center gap-2 transform hover:scale-105"
               >
                 Get Free Quote
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <Link
                 href="/services"
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-semibold hover:bg-white hover:text-blue-900 transition-colors inline-flex items-center justify-center"
+                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-800 transition-all inline-flex items-center justify-center"
               >
                 Our Services
               </Link>
@@ -120,11 +121,11 @@ export default function Home() {
                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow group"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-900 transition-colors">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-slate-800 transition-colors">
                   {service.name}
                 </h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
-                <span className="text-blue-900 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                <span className="text-slate-800 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all">
                   Learn More
                   <ArrowRight className="h-4 w-4" />
                 </span>
@@ -134,7 +135,7 @@ export default function Home() {
           <div className="text-center mt-8">
             <Link
               href="/services"
-              className="text-blue-900 font-semibold hover:underline inline-flex items-center gap-2"
+              className="text-slate-800 font-semibold hover:underline inline-flex items-center gap-2"
             >
               View All Services
               <ArrowRight className="h-5 w-5" />
@@ -167,24 +168,24 @@ export default function Home() {
       </section>
 
       {/* Trust Indicators */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-gradient-to-r from-slate-800 to-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold mb-2">15+</div>
-              <div className="text-blue-200">Years Experience</div>
+              <div className="text-orange-300">Years Experience</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">1000+</div>
-              <div className="text-blue-200">Projects Completed</div>
+              <div className="text-orange-300">Projects Completed</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">98%</div>
-              <div className="text-blue-200">Customer Satisfaction</div>
+              <div className="text-orange-300">Customer Satisfaction</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">UK Wide</div>
-              <div className="text-blue-200">Service Coverage</div>
+              <div className="text-orange-300">Service Coverage</div>
             </div>
           </div>
         </div>
@@ -202,14 +203,36 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-lg overflow-hidden shadow-md">
-                <div className="h-64 bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-400">Project Image {i}</span>
+            {[
+              { 
+                title: 'Modern Slate Roof Installation', 
+                description: 'Professional pitched roofing with premium materials',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&q=80'
+              },
+              { 
+                title: 'Commercial Flat Roofing', 
+                description: 'Durable flat roof system for commercial properties',
+                image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=600&h=400&fit=crop&q=80'
+              },
+              { 
+                title: 'Residential Roof Repair', 
+                description: 'Expert repair and maintenance services',
+                image: 'https://images.unsplash.com/photo-1581578731548-c6a0c3f2fcc0?w=600&h=400&fit=crop&q=80'
+              }
+            ].map((project, i) => (
+              <div key={i} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                <div className="relative h-64">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-semibold text-gray-900 mb-2">Roofing Project {i}</h3>
-                  <p className="text-gray-600 text-sm">Professional roofing installation and repair</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{project.title}</h3>
+                  <p className="text-gray-600 text-sm">{project.description}</p>
                 </div>
               </div>
             ))}
@@ -217,7 +240,7 @@ export default function Home() {
           <div className="text-center">
             <Link
               href="/gallery"
-              className="bg-blue-900 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-800 transition-colors inline-flex items-center gap-2"
+              className="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2"
             >
               View Full Gallery
               <ArrowRight className="h-5 w-5" />
@@ -237,7 +260,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="bg-blue-900 text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-800 transition-colors inline-flex items-center gap-2"
+            className="bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2"
           >
             Contact Us Today
             <ArrowRight className="h-5 w-5" />

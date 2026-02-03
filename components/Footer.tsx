@@ -26,7 +26,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-              <div className="h-10 w-10 bg-blue-900 rounded flex items-center justify-center text-white font-bold">
+              <div className="h-10 w-10 bg-slate-800 rounded flex items-center justify-center text-white font-bold">
                 RR
               </div>
               <span className="ml-2 text-xl font-bold text-white">Reliant Roofers</span>
@@ -36,13 +36,13 @@ export default function Footer() {
               repairs, and new construction projects.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-blue-400 transition-colors" aria-label="Facebook">
+              <a href="#" className="hover:text-orange-500 transition-colors" aria-label="Facebook">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-blue-400 transition-colors" aria-label="Twitter">
+              <a href="#" className="hover:text-orange-500 transition-colors" aria-label="Twitter">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-blue-400 transition-colors" aria-label="Instagram">
+              <a href="#" className="hover:text-orange-500 transition-colors" aria-label="Instagram">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="hover:text-blue-400 transition-colors text-sm">
+                  <Link href={link.href} className="hover:text-orange-500 transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -68,7 +68,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service.name}>
-                  <Link href={service.href} className="hover:text-blue-400 transition-colors text-sm">
+                  <Link href={service.href} className="hover:text-orange-500 transition-colors text-sm">
                     {service.name}
                   </Link>
                 </li>
@@ -82,14 +82,14 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                <a href="tel:+441234567890" className="hover:text-blue-400 transition-colors text-sm">
-                  01234 567 890
+                <a href="tel:+447393121621" className="hover:text-orange-500 transition-colors text-sm">
+                  07393 121 621
                 </a>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@reliantroofers.co.uk" className="hover:text-blue-400 transition-colors text-sm">
-                  info@reliantroofers.co.uk
+                <a href="mailto:info@royalroofworks.com" className="hover:text-orange-500 transition-colors text-sm">
+                  info@royalroofworks.com
                 </a>
               </li>
               <li className="flex items-start">
@@ -114,10 +114,10 @@ export default function Footer() {
               © {new Date().getFullYear()} Reliant Roofers. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/privacy" className="text-sm hover:text-blue-400 transition-colors">
+              <Link href="/privacy" className="text-sm hover:text-orange-500 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-sm hover:text-blue-400 transition-colors">
+              <Link href="/terms" className="text-sm hover:text-orange-500 transition-colors">
                 Terms of Service
               </Link>
             </div>

@@ -11,10 +11,10 @@ export default function ContactPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-slate-800 to-orange-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-blue-100 max-w-3xl">
+          <p className="text-xl text-orange-100 max-w-3xl">
             Get in touch for a free, no-obligation quote on your roofing project
           </p>
         </div>
@@ -35,29 +35,29 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <Phone className="h-6 w-6 text-blue-900 mr-4 mt-1 flex-shrink-0" />
+                  <Phone className="h-6 w-6 text-slate-800 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:+441234567890" className="text-blue-900 hover:underline">
-                      01234 567 890
+                    <a href="tel:+447393121621" className="text-slate-800 hover:underline">
+                      07393 121 621
                     </a>
                     <p className="text-sm text-gray-600 mt-1">Mon-Fri: 8:00 AM - 6:00 PM</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <Mail className="h-6 w-6 text-blue-900 mr-4 mt-1 flex-shrink-0" />
+                  <Mail className="h-6 w-6 text-slate-800 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:info@reliantroofers.co.uk" className="text-blue-900 hover:underline">
-                      info@reliantroofers.co.uk
+                    <a href="mailto:info@royalroofworks.com" className="text-slate-800 hover:underline">
+                      info@royalroofworks.com
                     </a>
                     <p className="text-sm text-gray-600 mt-1">We&apos;ll respond within 24 hours</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-blue-900 mr-4 mt-1 flex-shrink-0" />
+                  <MapPin className="h-6 w-6 text-slate-800 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Service Area</h3>
                     <p className="text-gray-700">UK Wide Service</p>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start">
-                  <Clock className="h-6 w-6 text-blue-900 mr-4 mt-1 flex-shrink-0" />
+                  <Clock className="h-6 w-6 text-slate-800 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
                     <div className="text-gray-700 space-y-1">

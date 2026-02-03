@@ -56,10 +56,10 @@ export default function ServicesPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-slate-800 to-orange-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-          <p className="text-xl text-blue-100 max-w-3xl">
+          <p className="text-xl text-orange-100 max-w-3xl">
             Comprehensive roofing solutions for residential and commercial properties across the UK
           </p>
         </div>
@@ -76,11 +76,11 @@ export default function ServicesPage() {
                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow group border border-gray-200"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h2 className="text-2xl font-semibold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-3 group-hover:text-slate-800 transition-colors">
                   {service.name}
                 </h2>
                 <p className="text-gray-600 mb-4">{service.description}</p>
-                <span className="text-blue-900 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                <span className="text-slate-800 font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all">
                   Learn More
                   <ArrowRight className="h-4 w-4" />
                 </span>
@@ -102,7 +102,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/contact"
-            className="bg-blue-900 text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-800 transition-colors inline-flex items-center gap-2"
+            className="bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2"
           >
             Get Free Quote
             <ArrowRight className="h-5 w-5" />

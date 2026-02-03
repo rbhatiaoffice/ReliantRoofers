@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Award, Users, Shield, MapPin, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -10,17 +11,17 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const values = [
     {
-      icon: <Award className="h-8 w-8 text-blue-900" />,
+      icon: <Award className="h-8 w-8 text-slate-800" />,
       title: 'Quality Craftsmanship',
       description: 'We take pride in delivering exceptional workmanship on every project, no matter the size.',
     },
     {
-      icon: <Shield className="h-8 w-8 text-blue-900" />,
+      icon: <Shield className="h-8 w-8 text-slate-800" />,
       title: 'Reliability',
       description: 'You can count on us to complete your project on time and within budget.',
     },
     {
-      icon: <Users className="h-8 w-8 text-blue-900" />,
+      icon: <Users className="h-8 w-8 text-slate-800" />,
       title: 'Customer Focus',
       description: 'Your satisfaction is our priority. We work closely with you throughout the entire process.',
     },
@@ -37,10 +38,10 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-slate-800 to-orange-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">About Reliant Roofers</h1>
-          <p className="text-xl text-blue-100 max-w-3xl">
+          <p className="text-xl text-orange-100 max-w-3xl">
             Trusted roofing experts serving customers across the UK for over 15 years
           </p>
         </div>
@@ -72,8 +73,14 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <span className="text-gray-400">Company Image Placeholder</span>
+            <div className="relative rounded-lg h-96 overflow-hidden shadow-lg">
+              <Image
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop&q=80"
+                alt="Professional roofing team at work"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>
@@ -126,7 +133,7 @@ export default function AboutPage() {
               <ul className="space-y-2">
                 {certifications.map((cert, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-blue-900 mr-2 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-slate-800 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">{cert}</span>
                   </li>
                 ))}
@@ -137,24 +144,24 @@ export default function AboutPage() {
       </section>
 
       {/* Service Areas */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <MapPin className="h-12 w-12 mx-auto mb-4 text-blue-300" />
+            <MapPin className="h-12 w-12 mx-auto mb-4 text-orange-300" />
             <h2 className="text-3xl font-bold mb-4">Service Areas</h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-orange-100 max-w-3xl mx-auto">
               We provide professional roofing services across the United Kingdom. Whether you&apos;re in 
               a major city or a rural area, we&apos;re here to help with all your roofing needs.
             </p>
           </div>
           <div className="text-center">
-            <p className="text-lg text-blue-200 mb-6">
+            <p className="text-lg text-orange-200 mb-6">
               Contact us to see if we cover your area. We&apos;re always expanding our service coverage 
               to reach more customers.
             </p>
             <Link
               href="/contact"
-              className="bg-white text-blue-900 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors inline-block"
+              className="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl inline-block"
             >
               Contact Us Today
             </Link>
