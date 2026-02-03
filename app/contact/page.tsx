@@ -52,7 +52,7 @@ export default function ContactPage() {
                     <a href="mailto:info@reliantroofers.co.uk" className="text-blue-900 hover:underline">
                       info@reliantroofers.co.uk
                     </a>
-                    <p className="text-sm text-gray-600 mt-1">We'll respond within 24 hours</p>
+                    <p className="text-sm text-gray-600 mt-1">We&apos;ll respond within 24 hours</p>
                   </div>
                 </div>
 

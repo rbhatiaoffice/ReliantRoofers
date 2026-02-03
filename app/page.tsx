@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, CheckCircle, Award, Users, Clock, Shield } from 'lucide-react';
-import Image from 'next/image';
+import { ArrowRight, Award, Users, Clock, Shield } from 'lucide-react';
 
 export default function Home() {
   const services = [
@@ -152,7 +151,7 @@ export default function Home() {
               Why Choose Reliant Roofers?
             </h2>
             <p className="text-lg text-gray-600">
-              We're committed to delivering excellence in every project
+              We&apos;re committed to delivering excellence in every project
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

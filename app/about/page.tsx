@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <p>
                   Reliant Roofers was founded with a simple mission: to provide exceptional roofing 
                   services that homeowners and businesses can trust. With over 15 years of experience 
-                  in the industry, we've built a reputation for quality, reliability, and outstanding 
+                  in the industry, we&apos;ve built a reputation for quality, reliability, and outstanding 
                   customer service.
                 </p>
                 <p>
@@ -67,7 +67,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   We believe that a roof is one of the most important parts of any building, protecting 
-                  what matters most. That's why we never compromise on quality and always use the best 
+                  what matters most. That&apos;s why we never compromise on quality and always use the best 
                   materials and techniques available.
                 </p>
               </div>
@@ -85,7 +85,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission & Values</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We're committed to delivering excellence in every project while maintaining the highest 
+              We&apos;re committed to delivering excellence in every project while maintaining the highest 
               standards of professionalism and integrity.
             </p>
           </div>
@@ -143,13 +143,13 @@ export default function AboutPage() {
             <MapPin className="h-12 w-12 mx-auto mb-4 text-blue-300" />
             <h2 className="text-3xl font-bold mb-4">Service Areas</h2>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              We provide professional roofing services across the United Kingdom. Whether you're in 
-              a major city or a rural area, we're here to help with all your roofing needs.
+              We provide professional roofing services across the United Kingdom. Whether you&apos;re in 
+              a major city or a rural area, we&apos;re here to help with all your roofing needs.
             </p>
           </div>
           <div className="text-center">
             <p className="text-lg text-blue-200 mb-6">
-              Contact us to see if we cover your area. We're always expanding our service coverage 
+              Contact us to see if we cover your area. We&apos;re always expanding our service coverage 
               to reach more customers.
             </p>
             <Link
