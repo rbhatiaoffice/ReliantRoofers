@@ -11,10 +11,19 @@ const contactSchema = z.object({
   preferredContactMethod: z.enum(['email', 'phone', 'either']).optional(),
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
   try {
+    // Check for API key before initializing Resend
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      console.error('RESEND_API_KEY is not configured');
+      return NextResponse.json(
+        { error: 'Email service is not configured' },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(apiKey);
     const body = await request.json();
     
     // Validate the request body
