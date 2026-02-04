@@ -36,8 +36,8 @@ export default function RootLayout({
     name: 'Reliant Roofers',
     description: 'Professional roofing services across the UK',
     url: 'https://reliantroofers.co.uk',
-    telephone: '+447393121621',
-    email: 'info@royalroofworks.com',
+        telephone: '+447552386343',
+        email: 'rishi.bhatia.office@gmail.com',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'GB',

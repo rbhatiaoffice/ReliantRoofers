@@ -61,7 +61,7 @@ A comprehensive, professional Next.js web application for Reliant Roofers, a roo
    Then edit `.env.local` and add your configuration:
    ```env
    RESEND_API_KEY=your_resend_api_key
-   ADMIN_EMAIL=info@royalroofworks.com
+   ADMIN_EMAIL=rishi.bhatia.office@gmail.com
    FROM_EMAIL=noreply@reliantroofers.co.uk
    SEND_CONFIRMATION_EMAIL=false
    ```
@@ -237,8 +237,8 @@ Proprietary - All rights reserved
 ## 📞 Support
 
 For questions or support, please contact:
-- Email: info@royalroofworks.com
-- Phone: 07393 121 621
+- Email: rishi.bhatia.office@gmail.com
+- Phone: +44 7552 386343
 
 ## 🎯 Future Enhancements
 

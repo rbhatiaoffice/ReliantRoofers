@@ -82,14 +82,14 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                <a href="tel:+447393121621" className="hover:text-orange-500 transition-colors text-sm">
-                  07393 121 621
+                <a href="tel:+447552386343" className="hover:text-orange-500 transition-colors text-sm">
+                  +44 7552 386343
                 </a>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@royalroofworks.com" className="hover:text-orange-500 transition-colors text-sm">
-                  info@royalroofworks.com
+                <a href="mailto:rishi.bhatia.office@gmail.com" className="hover:text-orange-500 transition-colors text-sm">
+                  rishi.bhatia.office@gmail.com
                 </a>
               </li>
               <li className="flex items-start">

@@ -121,7 +121,7 @@ export default function ContactForm() {
           id="phone"
           {...register('phone')}
           className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-900 focus:border-transparent"
-          placeholder="07393 121 621"
+              placeholder="+44 7552 386343"
         />
         {errors.phone && (
           <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>

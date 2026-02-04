@@ -205,19 +205,19 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {[
               { 
-                title: 'Modern Slate Roof Installation', 
+                title: 'Pitched Roof Installation', 
                 description: 'Professional pitched roofing with premium materials',
-                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&q=80'
+                image: '/images/gallery/pitched roof.jpeg'
               },
               { 
-                title: 'Commercial Flat Roofing', 
+                title: 'Flat Roof Installation', 
                 description: 'Durable flat roof system for commercial properties',
-                image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=600&h=400&fit=crop&q=80'
+                image: '/images/gallery/flat roof.jpeg'
               },
               { 
-                title: 'Residential Roof Repair', 
-                description: 'Expert repair and maintenance services',
-                image: 'https://images.unsplash.com/photo-1581578731548-c6a0c3f2fcc0?w=600&h=400&fit=crop&q=80'
+                title: 'Dormer Construction', 
+                description: 'Expert loft conversion and dormer installation',
+                image: '/images/gallery/dormer.jpeg'
               }
             ].map((project, i) => (
               <div key={i} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">

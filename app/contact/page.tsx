@@ -38,9 +38,9 @@ export default function ContactPage() {
                   <Phone className="h-6 w-6 text-slate-800 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:+447393121621" className="text-slate-800 hover:underline">
-                      07393 121 621
-                    </a>
+                        <a href="tel:+447552386343" className="text-slate-800 hover:underline">
+                          +44 7552 386343
+                        </a>
                     <p className="text-sm text-gray-600 mt-1">Mon-Fri: 8:00 AM - 6:00 PM</p>
                   </div>
                 </div>
@@ -49,9 +49,9 @@ export default function ContactPage() {
                   <Mail className="h-6 w-6 text-slate-800 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:info@royalroofworks.com" className="text-slate-800 hover:underline">
-                      info@royalroofworks.com
-                    </a>
+                        <a href="mailto:rishi.bhatia.office@gmail.com" className="text-slate-800 hover:underline">
+                          rishi.bhatia.office@gmail.com
+                        </a>
                     <p className="text-sm text-gray-600 mt-1">We&apos;ll respond within 24 hours</p>
                   </div>
                 </div>

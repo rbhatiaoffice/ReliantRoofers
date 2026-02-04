@@ -123,11 +123,11 @@ export default function ServicePageLayout({
                 <div className="border-t border-orange-200 pt-4 mt-4">
                   <p className="text-sm font-semibold text-gray-900 mb-2">Call Us Directly</p>
                   <a
-                    href="tel:+447393121621"
+                        href="tel:+447552386343"
                     className="text-slate-800 font-semibold hover:underline flex items-center gap-2"
                   >
                     <Phone className="h-4 w-4" />
-                    07393 121 621
+                        +44 7552 386343
                   </a>
                 </div>
               </div>

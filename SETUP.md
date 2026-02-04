@@ -27,7 +27,7 @@ npm install
 
 ```env
 RESEND_API_KEY=re_your_api_key_here
-ADMIN_EMAIL=info@royalroofworks.com
+ADMIN_EMAIL=rishi.bhatia.office@gmail.com
 FROM_EMAIL=noreply@reliantroofers.co.uk
 SEND_CONFIRMATION_EMAIL=false
 ```
