@@ -51,6 +51,10 @@ export default function RepairsMaintenancePage() {
           description: 'We provide advice on maintaining your roof to prevent future issues.',
         },
       ]}
+      images={[
+        '/images/gallery/gutter fascia.jpeg',
+        '/images/gallery/lead valley.jpeg',
+      ]}
     />
   );
 }

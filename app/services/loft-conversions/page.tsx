@@ -48,6 +48,18 @@ export default function LoftConversionsPage() {
           description: 'Complete roofing installation with proper insulation and weatherproofing.',
         },
       ]}
+      images={[
+        '/images/gallery/dormer.jpeg',
+        '/images/gallery/dormer (2).jpeg',
+        '/images/gallery/dormer (3).jpeg',
+        '/images/gallery/dormer (4).jpeg',
+        '/images/gallery/dormer (5).jpeg',
+        '/images/gallery/dormer (6).jpeg',
+        '/images/gallery/dormer (7).jpeg',
+        '/images/gallery/dormer (8).jpeg',
+        '/images/gallery/dormer (9).jpeg',
+        '/images/gallery/loft.jpeg',
+      ]}
     />
   );
 }

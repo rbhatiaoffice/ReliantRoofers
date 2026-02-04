@@ -48,6 +48,11 @@ export default function NewRoofsConstructionPage() {
           description: 'Final inspection and certification to ensure compliance with building regulations.',
         },
       ]}
+      images={[
+        '/images/gallery/pitched roof.jpeg',
+        '/images/gallery/pitched roof (2).jpeg',
+        '/images/gallery/picted roof extension.jpeg',
+      ]}
     />
   );
 }

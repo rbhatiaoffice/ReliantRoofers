@@ -32,22 +32,22 @@ export default function Home() {
 
   const whyChooseUs = [
     {
-      icon: <Award className="h-8 w-8 text-slate-800" />,
+      icon: <Award className="h-8 w-8 text-orange-600" />,
       title: 'Certified Professionals',
       description: 'Fully qualified and insured roofing specialists',
     },
     {
-      icon: <Clock className="h-8 w-8 text-slate-800" />,
+      icon: <Clock className="h-8 w-8 text-orange-600" />,
       title: 'Years of Experience',
       description: 'Over 15 years serving customers across the UK',
     },
     {
-      icon: <Shield className="h-8 w-8 text-slate-800" />,
+      icon: <Shield className="h-8 w-8 text-orange-600" />,
       title: 'Fully Insured',
       description: 'Comprehensive insurance coverage for your peace of mind',
     },
     {
-      icon: <Users className="h-8 w-8 text-slate-800" />,
+      icon: <Users className="h-8 w-8 text-orange-600" />,
       title: 'Trusted by Thousands',
       description: 'Satisfied customers throughout the UK',
     },

@@ -48,6 +48,10 @@ export default function FlatRoofingPage() {
           description: 'We ensure your new flat roof is properly sealed and ready for years of service.',
         },
       ]}
+      images={[
+        '/images/gallery/flat roof.jpeg',
+        '/images/gallery/flat roof (2).jpeg',
+      ]}
     />
   );
 }

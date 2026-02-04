@@ -47,6 +47,10 @@ export default function RoofingMaterialsPage() {
           description: 'We ensure all materials are properly installed and meet quality standards.',
         },
       ]}
+      images={[
+        '/images/gallery/pitched roof.jpeg',
+        '/images/gallery/pitched roof (2).jpeg',
+      ]}
     />
   );
 }

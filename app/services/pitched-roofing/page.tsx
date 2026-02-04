@@ -51,6 +51,11 @@ export default function PitchedRoofingPage() {
           description: 'We conduct thorough inspections to ensure your roof meets the highest standards.',
         },
       ]}
+      images={[
+        '/images/gallery/pitched roof.jpeg',
+        '/images/gallery/pitched roof (2).jpeg',
+        '/images/gallery/picted roof extension.jpeg',
+      ]}
     />
   );
 }

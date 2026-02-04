@@ -50,6 +50,10 @@ export default function AdditionalServicesPage() {
           description: 'Final inspection to ensure everything is properly installed and functioning.',
         },
       ]}
+      images={[
+        '/images/gallery/gutter fascia.jpeg',
+        '/images/gallery/lead valley.jpeg',
+      ]}
     />
   );
 }

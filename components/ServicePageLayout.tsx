@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowLeft, Phone } from 'lucide-react';
+import ImageCarousel from './ImageCarousel';
 
 interface ServicePageLayoutProps {
   title: string;
@@ -8,6 +8,7 @@ interface ServicePageLayoutProps {
   services: string[];
   features?: string[];
   process?: { step: number; title: string; description: string }[];
+  images?: string[];
   children?: React.ReactNode;
 }
 
@@ -17,6 +18,7 @@ export default function ServicePageLayout({
   services,
   features,
   process,
+  images,
   children,
 }: ServicePageLayoutProps) {
   return (
@@ -93,18 +95,13 @@ export default function ServicePageLayout({
               {/* Additional Content */}
               {children}
 
-              {/* Service Image */}
-              <div className="mt-8">
-                <div className="relative rounded-lg h-96 overflow-hidden shadow-lg">
-                  <Image
-                    src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&h=600&fit=crop&q=80"
-                    alt={`${title} service`}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 66vw"
-                  />
+              {/* Service Images */}
+              {images && images.length > 0 && (
+                <div className="mt-8">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Gallery</h2>
+                  <ImageCarousel images={images} alt={`${title} service`} />
                 </div>
-              </div>
+              )}
             </div>
 
             {/* Sidebar */}
