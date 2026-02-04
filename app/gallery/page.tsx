@@ -38,7 +38,7 @@ const galleryItems = [
     category: 'Flat Roofing', 
     image: '/images/gallery/flat roof (2).jpeg'
   },
-  // Loft Conversions - Dormer images (9 images)
+  // Loft Conversions - Dormer and Loft images (10 images)
   { 
     id: 6, 
     title: 'Dormer Construction', 
@@ -93,15 +93,21 @@ const galleryItems = [
     category: 'Loft Conversions', 
     image: '/images/gallery/dormer (9).jpeg'
   },
-  // Additional Services / Repairs
   { 
     id: 15, 
+    title: 'Loft Conversion Project', 
+    category: 'Loft Conversions', 
+    image: '/images/gallery/loft.jpeg'
+  },
+  // Additional Services / Repairs
+  { 
+    id: 16, 
     title: 'Gutter & Fascia Installation', 
     category: 'Repairs', 
     image: '/images/gallery/gutter fascia.jpeg'
   },
   { 
-    id: 16, 
+    id: 17, 
     title: 'Lead Valley Work', 
     category: 'Repairs', 
     image: '/images/gallery/lead valley.jpeg'
