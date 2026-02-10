@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Award, Users, Shield, MapPin, CheckCircle } from 'lucide-react';
 import ImageSlider from '@/components/ImageSlider';
 import GoogleMap from '@/components/GoogleMap';
@@ -75,13 +74,22 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="relative rounded-lg h-96 overflow-hidden shadow-lg">
-              <Image
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop&q=80"
-                alt="Professional roofing team at work"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+            <div>
+              <ImageSlider
+                images={[
+                  '/images/gallery/pitched roof.jpeg',
+                  '/images/gallery/picted roof extension.jpeg',
+                  '/images/gallery/pitched roof (2).jpeg',
+                  '/images/gallery/flat roof.jpeg',
+                  '/images/gallery/flat roof (2).jpeg',
+                  '/images/gallery/dormer.jpeg',
+                  '/images/gallery/dormer (2).jpeg',
+                  '/images/gallery/dormer (3).jpeg',
+                  '/images/gallery/loft.jpeg',
+                  '/images/gallery/gutter fascia.jpeg',
+                ]}
+                autoPlay={true}
+                autoPlayInterval={4000}
               />
             </div>
           </div>
@@ -141,43 +149,6 @@ export default function AboutPage() {
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Slider */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Work</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Browse through some of our completed projects showcasing quality craftsmanship and attention to detail
-            </p>
-          </div>
-          <ImageSlider
-            images={[
-              '/images/gallery/pitched roof.jpeg',
-              '/images/gallery/picted roof extension.jpeg',
-              '/images/gallery/pitched roof (2).jpeg',
-              '/images/gallery/flat roof.jpeg',
-              '/images/gallery/flat roof (2).jpeg',
-              '/images/gallery/dormer.jpeg',
-              '/images/gallery/dormer (2).jpeg',
-              '/images/gallery/dormer (3).jpeg',
-              '/images/gallery/loft.jpeg',
-              '/images/gallery/gutter fascia.jpeg',
-            ]}
-            autoPlay={true}
-            autoPlayInterval={4000}
-          />
-          <div className="text-center mt-8">
-            <Link
-              href="/gallery"
-              className="text-slate-800 font-semibold hover:underline inline-flex items-center gap-2"
-            >
-              View Full Gallery
-              <MapPin className="h-5 w-5" />
-            </Link>
           </div>
         </div>
       </section>
