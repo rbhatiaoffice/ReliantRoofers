@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Our Services | Reliant Roofers',
-  description: 'Comprehensive roofing services including pitched roofing, flat roofing, repairs, loft conversions, and new construction across the UK.',
+  description: 'Comprehensive roofing services including pitched roofing, flat roofing, repairs, loft conversions, and new construction in London and surrounding areas.',
 };
 
 const services = [
@@ -60,7 +60,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
           <p className="text-xl text-orange-100 max-w-3xl">
-            Comprehensive roofing solutions for residential and commercial properties across the UK
+            Comprehensive roofing solutions for residential and commercial properties in London and surrounding areas
           </p>
         </div>
       </section>

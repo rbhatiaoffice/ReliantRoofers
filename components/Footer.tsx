@@ -32,7 +32,7 @@ export default function Footer() {
               <span className="ml-2 text-xl font-bold text-white">Reliant Roofers</span>
             </div>
             <p className="text-sm mb-4">
-              Professional roofing services across the UK. Trusted experts in pitched and flat roofing, 
+              Professional roofing services in London and surrounding areas. Trusted experts in pitched and flat roofing, 
               repairs, and new construction projects.
             </p>
             <div className="flex space-x-4">
@@ -95,7 +95,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">
-                  UK Wide Service
+                  London & Surrounding Areas
                 </span>
               </li>
             </ul>

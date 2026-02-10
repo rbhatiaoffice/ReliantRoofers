@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
   title: 'Pitched Roofing Services | Reliant Roofers',
-  description: 'Expert pitched roofing installation, replacement, and repairs. Specialists in tiled, slate, and traditional pitched roof systems across the UK.',
+  description: 'Expert pitched roofing installation, replacement, and repairs. Specialists in tiled, slate, and traditional pitched roof systems in London and surrounding areas.',
 };
 
 export default function PitchedRoofingPage() {

@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
   title: 'Loft Conversions & Structural Work | Reliant Roofers',
-  description: 'Expert roofing solutions for loft conversions. Specialists in structural alterations, RSJs, dormer construction, and roof raising across the UK.',
+  description: 'Expert roofing solutions for loft conversions. Specialists in structural alterations, RSJs, dormer construction, and roof raising in London and surrounding areas.',
 };
 
 export default function LoftConversionsPage() {

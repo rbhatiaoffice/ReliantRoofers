@@ -2,10 +2,12 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Award, Users, Shield, MapPin, CheckCircle } from 'lucide-react';
+import ImageSlider from '@/components/ImageSlider';
+import GoogleMap from '@/components/GoogleMap';
 
 export const metadata: Metadata = {
   title: 'About Us | Reliant Roofers',
-  description: 'Learn about Reliant Roofers - over 15 years of experience providing professional roofing services across the UK. Certified, insured, and trusted by thousands.',
+  description: 'Learn about Reliant Roofers - over 15 years of experience providing professional roofing services in London and surrounding areas. Certified, insured, and trusted by thousands.',
 };
 
 export default function AboutPage() {
@@ -42,7 +44,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">About Reliant Roofers</h1>
           <p className="text-xl text-orange-100 max-w-3xl">
-            Trusted roofing experts serving customers across the UK for over 15 years
+            Trusted roofing experts serving customers in London and surrounding areas for over 15 years
           </p>
         </div>
       </section>
@@ -61,7 +63,7 @@ export default function AboutPage() {
                   customer service.
                 </p>
                 <p>
-                  What started as a small local business has grown into a trusted name across the UK, 
+                  What started as a small local business has grown into a trusted name in London and surrounding areas, 
                   serving thousands of satisfied customers. Our team of skilled professionals brings 
                   expertise in all aspects of roofing, from traditional pitched roofs to modern flat 
                   roofing systems.
@@ -143,6 +145,43 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Gallery Slider */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Work</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Browse through some of our completed projects showcasing quality craftsmanship and attention to detail
+            </p>
+          </div>
+          <ImageSlider
+            images={[
+              '/images/gallery/pitched roof.jpeg',
+              '/images/gallery/picted roof extension.jpeg',
+              '/images/gallery/pitched roof (2).jpeg',
+              '/images/gallery/flat roof.jpeg',
+              '/images/gallery/flat roof (2).jpeg',
+              '/images/gallery/dormer.jpeg',
+              '/images/gallery/dormer (2).jpeg',
+              '/images/gallery/dormer (3).jpeg',
+              '/images/gallery/loft.jpeg',
+              '/images/gallery/gutter fascia.jpeg',
+            ]}
+            autoPlay={true}
+            autoPlayInterval={4000}
+          />
+          <div className="text-center mt-8">
+            <Link
+              href="/gallery"
+              className="text-slate-800 font-semibold hover:underline inline-flex items-center gap-2"
+            >
+              View Full Gallery
+              <MapPin className="h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Service Areas */}
       <section className="py-16 bg-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -150,10 +189,20 @@ export default function AboutPage() {
             <MapPin className="h-12 w-12 mx-auto mb-4 text-orange-300" />
             <h2 className="text-3xl font-bold mb-4">Service Areas</h2>
             <p className="text-xl text-orange-100 max-w-3xl mx-auto">
-              We provide professional roofing services across the United Kingdom. Whether you&apos;re in 
-              a major city or a rural area, we&apos;re here to help with all your roofing needs.
+              We provide professional roofing services throughout London and surrounding areas including Surrey, 
+              Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire. We&apos;re here to help with all your roofing needs.
             </p>
           </div>
+          
+          {/* Google Maps */}
+          <div className="mb-8">
+            <GoogleMap
+              center={{ lat: 51.5074, lng: -0.1278 }}
+              zoom={10}
+              apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
+            />
+          </div>
+
           <div className="text-center">
             <p className="text-lg text-orange-200 mb-6">
               Contact us to see if we cover your area. We&apos;re always expanding our service coverage 

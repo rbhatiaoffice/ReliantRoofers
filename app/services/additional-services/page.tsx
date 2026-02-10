@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
   title: 'Additional Roofing Services | Reliant Roofers',
-  description: 'Comprehensive additional roofing services including leadwork, flashings, fascias, soffits, guttering, Velux windows, and insulation across the UK.',
+  description: 'Comprehensive additional roofing services including leadwork, flashings, fascias, soffits, guttering, Velux windows, and insulation in London and surrounding areas.',
 };
 
 export default function AdditionalServicesPage() {

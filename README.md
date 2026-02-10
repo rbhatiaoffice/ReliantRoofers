@@ -10,12 +10,14 @@ A comprehensive, professional Next.js web application for Reliant Roofers, a roo
 - **Contact Form**: Fully functional contact form with email integration using Resend
 - **Service Pages**: 7 comprehensive service pages covering all roofing services
 - **Gallery**: Portfolio showcase with filtering and lightbox functionality
+- **Image Slider**: Interactive image slider on About page showcasing completed projects
+- **Google Maps**: Interactive map showing service areas (London and surrounding areas)
 - **Professional Design**: Traditional, trustworthy aesthetic with modern UX
 
 ## 📋 Pages
 
 - **Home** (`/`) - Hero section, services preview, why choose us, trust indicators
-- **About** (`/about`) - Company history, mission, values, certifications
+- **About** (`/about`) - Company history, mission, values, certifications, image slider, and Google Maps
 - **Services** - 7 individual service pages:
   - Pitched Roofing (`/services/pitched-roofing`)
   - Flat Roofing (`/services/flat-roofing`)
@@ -36,6 +38,7 @@ A comprehensive, professional Next.js web application for Reliant Roofers, a roo
 - **Email Service**: Resend
 - **Icons**: Lucide React
 - **Fonts**: Inter (sans-serif) and Playfair Display (serif)
+- **Maps**: Google Maps JavaScript API
 
 ## 📦 Installation
 
@@ -64,6 +67,7 @@ A comprehensive, professional Next.js web application for Reliant Roofers, a roo
    ADMIN_EMAIL=rishi.bhatia.office@gmail.com
    FROM_EMAIL=noreply@reliantroofers.co.uk
    SEND_CONFIRMATION_EMAIL=false
+   NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
    ```
 
 4. **Run the development server**:
@@ -85,6 +89,18 @@ A comprehensive, professional Next.js web application for Reliant Roofers, a roo
 2. **Get your API key** from the Resend dashboard
 3. **Verify your domain** or use Resend's test domain for development
 4. **Add the API key** to your `.env.local` file
+
+### Google Maps Setup
+
+1. **Create a Google Cloud Project** at [https://console.cloud.google.com](https://console.cloud.google.com)
+2. **Enable the Maps JavaScript API** in the API Library
+3. **Create an API Key** in the Credentials section
+4. **Restrict the API Key** (recommended):
+   - Application restrictions: HTTP referrers
+   - Add your domain(s): `yourdomain.com/*`, `*.yourdomain.com/*`
+   - API restrictions: Restrict to "Maps JavaScript API"
+5. **Add the API key** to your `.env.local` file as `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`
+6. The map will appear on the About page showing London and surrounding areas
 
 ### Alternative: Using Nodemailer
 
@@ -132,6 +148,8 @@ reliant-roofers-web/
 │   ├── Header.tsx                 # Navigation header
 │   ├── Footer.tsx                 # Site footer
 │   ├── ContactForm.tsx            # Contact form component
+│   ├── ImageSlider.tsx            # Image slider component for About page
+│   ├── GoogleMap.tsx              # Google Maps component
 │   └── ServicePageLayout.tsx      # Reusable service page layout
 ├── lib/
 │   └── email.ts                   # Email utility functions
@@ -194,6 +212,7 @@ The application can be deployed to any platform that supports Next.js:
 | `ADMIN_EMAIL` | Email address to receive contact form submissions | Yes |
 | `FROM_EMAIL` | Verified email address in Resend | Yes |
 | `SEND_CONFIRMATION_EMAIL` | Set to 'true' to send confirmation emails to users | No |
+| `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | Google Maps API key for map display on About page | No (map will show placeholder if not provided) |
 
 ## 🧪 Testing
 

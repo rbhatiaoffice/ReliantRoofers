@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
   title: 'New Roofs & Construction Services | Reliant Roofers',
-  description: 'Complete new roof installations for new builds, extensions, and renovations. Expert timber framing and structural roofing work across the UK.',
+  description: 'Complete new roof installations for new builds, extensions, and renovations. Expert timber framing and structural roofing work in London and surrounding areas.',
 };
 
 export default function NewRoofsConstructionPage() {

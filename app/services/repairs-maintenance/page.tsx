@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
   title: 'Roof Repairs & Maintenance | Reliant Roofers',
-  description: 'Fast, reliable roof repairs for all roof types. Emergency services, leak repairs, storm damage, and routine maintenance across the UK.',
+  description: 'Fast, reliable roof repairs for all roof types. Emergency services, leak repairs, storm damage, and routine maintenance in London and surrounding areas.',
 };
 
 export default function RepairsMaintenancePage() {

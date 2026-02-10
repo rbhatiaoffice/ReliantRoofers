@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
   title: 'Roofing Materials | Reliant Roofers',
-  description: 'Premium roofing materials including slate, tiles, and natural materials. Expert supply and installation of quality roofing materials across the UK.',
+  description: 'Premium roofing materials including slate, tiles, and natural materials. Expert supply and installation of quality roofing materials in London and surrounding areas.',
 };
 
 export default function RoofingMaterialsPage() {

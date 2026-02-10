@@ -3,7 +3,7 @@ import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
   title: 'Flat Roofing Services | Reliant Roofers',
-  description: 'Professional flat roofing installation and repairs. Specialists in felt, torch-on, and GRP fibreglass flat roof systems across the UK.',
+  description: 'Professional flat roofing installation and repairs. Specialists in felt, torch-on, and GRP fibreglass flat roof systems in London and surrounding areas.',
 };
 
 export default function FlatRoofingPage() {

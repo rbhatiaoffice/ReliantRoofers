@@ -39,7 +39,7 @@ export default function Home() {
     {
       icon: <Clock className="h-8 w-8 text-orange-600" />,
       title: 'Years of Experience',
-      description: 'Over 15 years serving customers across the UK',
+      description: 'Over 15 years serving customers in London and surrounding areas',
     },
     {
       icon: <Shield className="h-8 w-8 text-orange-600" />,
@@ -49,7 +49,7 @@ export default function Home() {
     {
       icon: <Users className="h-8 w-8 text-orange-600" />,
       title: 'Trusted by Thousands',
-      description: 'Satisfied customers throughout the UK',
+      description: 'Satisfied customers throughout London and surrounding areas',
     },
   ];
 
@@ -65,7 +65,7 @@ export default function Home() {
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
               Expert roofers providing quality pitched and flat roofing, repairs, and new construction 
-              services across the UK. Get your free quote today.
+              services in London and surrounding areas. Get your free quote today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -96,7 +96,7 @@ export default function Home() {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               With over 15 years of experience, Reliant Roofers is your trusted partner for all roofing 
               needs. We specialize in both traditional and modern roofing solutions, delivering quality 
-              craftsmanship and exceptional customer service throughout the UK.
+              craftsmanship and exceptional customer service in London and surrounding areas.
             </p>
           </div>
         </div>
@@ -184,7 +184,7 @@ export default function Home() {
               <div className="text-orange-300">Customer Satisfaction</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">UK Wide</div>
+              <div className="text-4xl font-bold mb-2">London+</div>
               <div className="text-orange-300">Service Coverage</div>
             </div>
           </div>
