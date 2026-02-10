@@ -43,7 +43,6 @@ export default function RootLayout({
       addressCountry: 'GB',
       addressLocality: 'London',
       addressRegion: 'Greater London',
-      addressCountry: 'GB',
     },
     areaServed: [
       {
