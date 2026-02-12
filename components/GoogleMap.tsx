@@ -27,23 +27,35 @@ export default function GoogleMap({
   useEffect(() => {
     if (!mapRef.current || !apiKey) return;
 
+    // Function to wait for Google Maps API to be fully loaded
+    function waitForGoogleMaps(callback: () => void) {
+      if (window.google && window.google.maps && window.google.maps.Map) {
+        callback();
+      } else {
+        setTimeout(() => waitForGoogleMaps(callback), 100);
+      }
+    }
+
     // Check if Google Maps is already loaded
-    if (window.google && window.google.maps) {
+    if (window.google && window.google.maps && window.google.maps.Map) {
       initializeMap();
     } else {
       // Load Google Maps script with async and defer for best performance
       const existingScript = document.querySelector(`script[src*="maps.googleapis.com"]`);
       if (existingScript) {
-        existingScript.addEventListener('load', initializeMap);
-        if (window.google && window.google.maps) {
-          initializeMap();
-        }
+        existingScript.addEventListener('load', () => {
+          waitForGoogleMaps(initializeMap);
+        });
+        // Also check if it's already loaded
+        waitForGoogleMaps(initializeMap);
       } else {
         const script = document.createElement('script');
         script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places,marker&loading=async`;
         script.async = true;
         script.defer = true;
-        script.onload = initializeMap;
+        script.onload = () => {
+          waitForGoogleMaps(initializeMap);
+        };
         script.onerror = () => {
           console.error('Failed to load Google Maps. Please check that Maps JavaScript API is enabled in Google Cloud Console.');
         };
@@ -52,9 +64,13 @@ export default function GoogleMap({
     }
 
     function initializeMap() {
-      if (!mapRef.current || !window.google || !window.google.maps) return;
+      if (!mapRef.current || !window.google || !window.google.maps || !window.google.maps.Map) {
+        console.error('Google Maps API not fully loaded');
+        return;
+      }
 
-      const map = new window.google.maps.Map(mapRef.current, {
+      try {
+        const map = new window.google.maps.Map(mapRef.current, {
         center,
         zoom,
         mapTypeControl: true,
@@ -86,7 +102,10 @@ export default function GoogleMap({
         });
       }
 
-      mapInstanceRef.current = map;
+        mapInstanceRef.current = map;
+      } catch (error) {
+        console.error('Error initializing Google Map:', error);
+      }
     }
 
     return () => {
