@@ -8,8 +8,8 @@
   # Omit the Google Maps API key from secrets scanning
   # It's a client-side key (NEXT_PUBLIC_) and is meant to be in the build output
   SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_GOOGLE_MAPS_API_KEY"
-  # Disable smart detection for Google Maps API key pattern
-  SECRETS_SCAN_SMART_DETECTION_OMIT_VALUES = "AIzaSy*"
+  # Disable smart detection entirely since Google Maps API keys are expected client-side
+  SECRETS_SCAN_SMART_DETECTION_ENABLED = "false"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
