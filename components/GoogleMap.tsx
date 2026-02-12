@@ -70,9 +70,12 @@ export default function GoogleMap({
       }
 
       try {
+        // Center point between London, Croydon, and Swindon to show all service areas
+        const mapCenter = { lat: 51.5, lng: -0.5 }; // Central point for London and surrounding areas
+        
         const map = new window.google.maps.Map(mapRef.current, {
-          center,
-          zoom,
+          center: mapCenter,
+          zoom: 9, // Zoom level to show London and surrounding areas
           mapTypeControl: true,
           streetViewControl: true,
           fullscreenControl: true,
@@ -85,12 +88,49 @@ export default function GoogleMap({
           ],
         });
 
-        // Use classic Marker (doesn't require Map ID)
-        // AdvancedMarkerElement requires a Map ID which needs additional setup
-        new window.google.maps.Marker({
-          position: center,
-          map,
-          title: 'Reliant Roofers',
+        // Wait for map to be fully ready before adding markers
+        window.google.maps.event.addListenerOnce(map, 'idle', () => {
+          // Service area locations
+          const serviceAreas = [
+            { lat: 51.5074, lng: -0.1278, label: 'London' },
+            { lat: 51.3762, lng: -0.0982, label: 'Croydon' },
+            { lat: 51.5584, lng: -1.7812, label: 'Swindon' },
+          ];
+
+          // Add markers for each service area
+          serviceAreas.forEach((area) => {
+            const marker = new window.google.maps.Marker({
+              position: { lat: area.lat, lng: area.lng },
+              map: map,
+              title: `Reliant Roofers - ${area.label}`,
+              label: {
+                text: area.label,
+                color: '#ffffff',
+                fontSize: '12px',
+                fontWeight: 'bold',
+              },
+            });
+
+            // Add info window for each marker
+            const infoWindow = new window.google.maps.InfoWindow({
+              content: `<div style="padding: 8px;"><strong>Reliant Roofers</strong><br/>${area.label}</div>`,
+            });
+
+            marker.addListener('click', () => {
+              infoWindow.open(map, marker);
+            });
+          });
+
+          // Fit bounds to show all service areas
+          const bounds = new window.google.maps.LatLngBounds();
+          serviceAreas.forEach((area) => {
+            bounds.extend(new window.google.maps.LatLng(area.lat, area.lng));
+          });
+          map.fitBounds(bounds);
+          
+          // Add some padding to the bounds
+          const padding = 50;
+          map.fitBounds(bounds, padding);
         });
 
         mapInstanceRef.current = map;
