@@ -50,7 +50,7 @@ export default function GoogleMap({
         waitForGoogleMaps(initializeMap);
       } else {
         const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places,marker&loading=async`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&loading=async`;
         script.async = true;
         script.defer = true;
         script.onload = () => {
@@ -71,36 +71,27 @@ export default function GoogleMap({
 
       try {
         const map = new window.google.maps.Map(mapRef.current, {
-        center,
-        zoom,
-        mapTypeControl: true,
-        streetViewControl: true,
-        fullscreenControl: true,
-        styles: [
-          {
-            featureType: 'poi',
-            elementType: 'labels',
-            stylers: [{ visibility: 'on' }],
-          },
-        ],
-      });
-
-      // Add marker using AdvancedMarkerElement (recommended) or fallback to Marker
-      if (window.google.maps.marker && window.google.maps.marker.AdvancedMarkerElement) {
-        // Use AdvancedMarkerElement (recommended)
-        new window.google.maps.marker.AdvancedMarkerElement({
-          map,
-          position: center,
-          title: 'Reliant Roofers',
+          center,
+          zoom,
+          mapTypeControl: true,
+          streetViewControl: true,
+          fullscreenControl: true,
+          styles: [
+            {
+              featureType: 'poi',
+              elementType: 'labels',
+              stylers: [{ visibility: 'on' }],
+            },
+          ],
         });
-      } else {
-        // Fallback to classic Marker (deprecated but still works)
+
+        // Use classic Marker (doesn't require Map ID)
+        // AdvancedMarkerElement requires a Map ID which needs additional setup
         new window.google.maps.Marker({
           position: center,
           map,
           title: 'Reliant Roofers',
         });
-      }
 
         mapInstanceRef.current = map;
       } catch (error) {
