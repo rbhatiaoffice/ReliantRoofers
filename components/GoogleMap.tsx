@@ -70,12 +70,15 @@ export default function GoogleMap({
       }
 
       try {
-        // Center point between London, Croydon, and Swindon to show all service areas
-        const mapCenter = { lat: 51.5, lng: -0.5 }; // Central point for London and surrounding areas
+        // London center coordinates
+        const londonCenter = { lat: 51.5074, lng: -0.1278 };
+        
+        // 30 miles in meters (1 mile = 1609.34 meters)
+        const radiusMeters = 30 * 1609.34;
         
         const map = new window.google.maps.Map(mapRef.current, {
-          center: mapCenter,
-          zoom: 9, // Zoom level to show London and surrounding areas
+          center: londonCenter,
+          zoom: 10, // Zoom level to show London and surrounding 30-mile area
           mapTypeControl: true,
           streetViewControl: true,
           fullscreenControl: true,
@@ -88,49 +91,61 @@ export default function GoogleMap({
           ],
         });
 
-        // Wait for map to be fully ready before adding markers
+        // Wait for map to be fully ready before adding coverage area
         window.google.maps.event.addListenerOnce(map, 'idle', () => {
-          // Service area locations
-          const serviceAreas = [
-            { lat: 51.5074, lng: -0.1278, label: 'London' },
-            { lat: 51.3762, lng: -0.0982, label: 'Croydon' },
-            { lat: 51.5584, lng: -1.7812, label: 'Swindon' },
-          ];
-
-          // Add markers for each service area
-          serviceAreas.forEach((area) => {
-            const marker = new window.google.maps.Marker({
-              position: { lat: area.lat, lng: area.lng },
-              map: map,
-              title: `Reliant Roofers - ${area.label}`,
-              label: {
-                text: area.label,
-                color: '#ffffff',
-                fontSize: '12px',
-                fontWeight: 'bold',
-              },
-            });
-
-            // Add info window for each marker
-            const infoWindow = new window.google.maps.InfoWindow({
-              content: `<div style="padding: 8px;"><strong>Reliant Roofers</strong><br/>${area.label}</div>`,
-            });
-
-            marker.addListener('click', () => {
-              infoWindow.open(map, marker);
-            });
+          // Create a circle to show service coverage area (30 miles from London)
+          const serviceAreaCircle = new window.google.maps.Circle({
+            strokeColor: '#f97316', // Orange color
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#f97316',
+            fillOpacity: 0.15,
+            map: map,
+            center: londonCenter,
+            radius: radiusMeters, // 30 miles in meters
           });
 
-          // Fit bounds to show all service areas
-          const bounds = new window.google.maps.LatLngBounds();
-          serviceAreas.forEach((area) => {
-            bounds.extend(new window.google.maps.LatLng(area.lat, area.lng));
+          // Fit the map to show the entire coverage circle
+          const bounds = serviceAreaCircle.getBounds();
+          if (bounds) {
+            map.fitBounds(bounds);
+            // Add padding to show area around the circle
+            const padding = 50;
+            map.fitBounds(bounds, padding);
+          }
+
+          // Add a center marker for London
+          const centerMarker = new window.google.maps.Marker({
+            position: londonCenter,
+            map: map,
+            title: 'Reliant Roofers - Service Area Coverage',
+            icon: {
+              path: window.google.maps.SymbolPath.CIRCLE,
+              scale: 8,
+              fillColor: '#f97316',
+              fillOpacity: 1,
+              strokeColor: '#ffffff',
+              strokeWeight: 2,
+            },
           });
-          map.fitBounds(bounds);
-          
-          // Add some padding to the bounds
-          const padding = 50;
-          map.fitBounds(bounds, padding);
+
+          // Info window showing service coverage
+          const infoWindow = new window.google.maps.InfoWindow({
+            content: `
+              <div style="padding: 12px; max-width: 250px;">
+                <strong style="font-size: 16px; color: #1e293b;">Reliant Roofers</strong>
+                <p style="margin: 8px 0 0 0; color: #475569;">
+                  Service Coverage Area<br/>
+                  London & Surrounding Areas<br/>
+                  Up to 30 miles radius
+                </p>
+              </div>
+            `,
+          });
+
+          centerMarker.addListener('click', () => {
+            infoWindow.open(map, centerMarker);
+          });
         });
 
         mapInstanceRef.current = map;

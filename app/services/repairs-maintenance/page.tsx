@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Roof Repairs in Croydon & Swindon | Emergency Roofers',
-  description: 'Fast, reliable roof repairs for all roof types in Croydon, Swindon, and outer London. Emergency services, leak repairs, storm damage, and routine maintenance. 24/7 available.',
-  keywords: 'roof repairs Croydon, roof repairs Swindon, emergency roofers outer London, leak repairs Croydon, storm damage repairs Swindon',
+  title: 'Roof Repairs in Croydon & Outer London | Emergency Roofers',
+  description: 'Fast, reliable roof repairs for all roof types in Croydon and outer London (up to 30 miles). Emergency services, leak repairs, storm damage, and routine maintenance. 24/7 available.',
+  keywords: 'roof repairs Croydon, roof repairs outer London, emergency roofers outer London, leak repairs Croydon, storm damage repairs outer London',
 };
 
 export default function RepairsMaintenancePage() {

@@ -3,9 +3,9 @@ import ContactForm from '@/components/ContactForm';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact Reliant Roofers - Roofers in Croydon & Swindon',
-  description: 'Get in touch with Reliant Roofers for a free quote. Expert roofers serving Croydon, Swindon, and outer London areas. Contact us by phone, email, or use our contact form.',
-  keywords: 'contact roofers Croydon, roofing quote Swindon, roofers near me, emergency roofers outer London',
+  title: 'Contact Reliant Roofers - Roofers in Croydon & Outer London',
+  description: 'Get in touch with Reliant Roofers for a free quote. Expert roofers serving Croydon and outer London areas (up to 30 miles). Contact us by phone, email, or use our contact form.',
+  keywords: 'contact roofers Croydon, roofing quote outer London, roofers near me, emergency roofers outer London',
 };
 
 export default function ContactPage() {
@@ -61,8 +61,8 @@ export default function ContactPage() {
                   <MapPin className="h-6 w-6 text-slate-800 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Service Areas</h3>
-                    <p className="text-gray-700">Croydon, Swindon & Outer London</p>
-                    <p className="text-sm text-gray-600 mt-1">Serving Croydon, Swindon, outer London, Surrey, Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire</p>
+                    <p className="text-gray-700">Croydon & Outer London (30 miles radius)</p>
+                    <p className="text-sm text-gray-600 mt-1">Serving Croydon, outer London, Surrey, Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire - up to 30 miles from London</p>
                   </div>
                 </div>
 

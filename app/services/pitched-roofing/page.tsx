@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Pitched Roofing in Croydon & Swindon | Expert Roofers',
-  description: 'Expert pitched roofing installation, replacement, and repairs in Croydon, Swindon, and outer London. Specialists in tiled, slate, and traditional pitched roof systems. Free quotes available.',
-  keywords: 'pitched roofing Croydon, pitched roofing Swindon, roofers Croydon, roofers Swindon, tiled roofing outer London, slate roofing Croydon',
+  title: 'Pitched Roofing in Croydon & Outer London | Expert Roofers',
+  description: 'Expert pitched roofing installation, replacement, and repairs in Croydon and outer London (up to 30 miles). Specialists in tiled, slate, and traditional pitched roof systems. Free quotes available.',
+  keywords: 'pitched roofing Croydon, pitched roofing outer London, roofers Croydon, roofers outer London, tiled roofing outer London, slate roofing Croydon',
 };
 
 export default function PitchedRoofingPage() {

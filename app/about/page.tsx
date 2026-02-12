@@ -5,9 +5,9 @@ import ImageSlider from '@/components/ImageSlider';
 import GoogleMap from '@/components/GoogleMap';
 
 export const metadata: Metadata = {
-  title: 'About Reliant Roofers - Expert Roofers in Croydon & Swindon',
-  description: 'Reliant Roofers - over 15 years of experience providing professional roofing services in Croydon, Swindon, and outer London areas. Certified, insured, and trusted by thousands of customers.',
-  keywords: 'roofers Croydon, roofers Swindon, professional roofers outer London, roofing company Croydon, roofing contractors Swindon',
+  title: 'About Reliant Roofers - Expert Roofers in Croydon & Outer London',
+  description: 'Reliant Roofers - over 15 years of experience providing professional roofing services in Croydon and outer London areas (up to 30 miles). Certified, insured, and trusted by thousands of customers.',
+  keywords: 'roofers Croydon, professional roofers outer London, roofing company Croydon, roofing contractors outer London',
 };
 
 export default function AboutPage() {
@@ -161,9 +161,9 @@ export default function AboutPage() {
             <MapPin className="h-12 w-12 mx-auto mb-4 text-orange-300" />
             <h2 className="text-3xl font-bold mb-4">Service Areas</h2>
             <p className="text-xl text-orange-100 max-w-3xl mx-auto">
-              We provide professional roofing services throughout Croydon, Swindon, and outer London areas including Surrey, 
+              We provide professional roofing services throughout Croydon and outer London areas (up to 30 miles radius) including Surrey, 
               Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire. Whether you need roof repairs in Croydon, flat roofing 
-              in Swindon, or emergency roof services across outer London, we&apos;re here to help with all your roofing needs.
+              in outer London, or emergency roof services across the area, we&apos;re here to help with all your roofing needs.
             </p>
           </div>
           
@@ -171,7 +171,6 @@ export default function AboutPage() {
           <div className="mb-8">
             <GoogleMap
               center={{ lat: 51.5074, lng: -0.1278 }}
-              zoom={10}
               apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}
             />
           </div>

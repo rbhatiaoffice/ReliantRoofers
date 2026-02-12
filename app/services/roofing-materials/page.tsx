@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Roofing Materials in Croydon & Swindon | Premium Suppliers',
-  description: 'Premium roofing materials including slate, tiles, and natural materials in Croydon, Swindon, and outer London. Expert supply and installation of quality roofing materials.',
-  keywords: 'roofing materials Croydon, slate roofing Swindon, roof tiles outer London, premium roofing materials Croydon',
+  title: 'Roofing Materials in Croydon & Outer London | Premium Suppliers',
+  description: 'Premium roofing materials including slate, tiles, and natural materials in Croydon and outer London (up to 30 miles). Expert supply and installation of quality roofing materials.',
+  keywords: 'roofing materials Croydon, slate roofing outer London, roof tiles outer London, premium roofing materials Croydon',
 };
 
 export default function RoofingMaterialsPage() {

@@ -60,11 +60,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Expert Roofers in Croydon & Swindon
+              Expert Roofers in Croydon & Outer London
               <span className="block mt-2 text-orange-400">Professional Roofing Services You Can Trust</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-              Trusted roofing experts serving Croydon, Swindon, and outer London areas. Expert roofers for pitched roofing, flat roofing, roof repairs, loft conversions, and emergency services. Get your free quote today.
+              Trusted roofing experts serving Croydon and outer London areas (up to 30 miles). Expert roofers for pitched roofing, flat roofing, roof repairs, loft conversions, and emergency services. Get your free quote today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -94,9 +94,9 @@ export default function Home() {
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               With over 15 years of experience, Reliant Roofers is your trusted partner for all roofing 
-              needs in Croydon, Swindon, and outer London areas. We specialize in both traditional and modern 
+              needs in Croydon and outer London areas (up to 30 miles from London). We specialize in both traditional and modern 
               roofing solutions, delivering quality craftsmanship and exceptional customer service. Whether 
-              you need roof repairs in Croydon, flat roofing in Swindon, or loft conversions across outer London, 
+              you need roof repairs in Croydon, flat roofing in outer London, or loft conversions across the area, 
               we&apos;re here to help.
             </p>
           </div>
@@ -255,10 +255,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Expert Roofers in Croydon & Swindon
+              Expert Roofers in Croydon & Outer London
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Serving Croydon, Swindon, and outer London areas with professional roofing services
+              Serving Croydon and outer London areas (up to 30 miles) with professional roofing services
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -292,31 +292,31 @@ export default function Home() {
               </ul>
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Roofing Services in Swindon</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Service Coverage Area</h3>
               <p className="text-gray-700 mb-4">
-                Professional roofing contractors serving Swindon and surrounding areas. Our experienced 
-                roofers offer:
+                We provide professional roofing services across London and outer areas within a 30-mile radius, 
+                including:
               </p>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-orange-600 mr-2">✓</span>
-                  <span>Expert roof repairs and maintenance in Swindon</span>
+                  <span>London and Greater London areas</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-orange-600 mr-2">✓</span>
-                  <span>New roof construction and installation in Swindon</span>
+                  <span>Surrey, Kent, Essex, Hertfordshire</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-orange-600 mr-2">✓</span>
-                  <span>Flat roofing systems for Swindon homes and businesses</span>
+                  <span>Buckinghamshire and Berkshire</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-orange-600 mr-2">✓</span>
-                  <span>Pitched roofing with premium materials in Swindon</span>
+                  <span>All areas within 30 miles of London</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-orange-600 mr-2">✓</span>
-                  <span>24/7 emergency roof repairs in Swindon</span>
+                  <span>24/7 emergency roof repairs available</span>
                 </li>
               </ul>
             </div>
@@ -324,7 +324,7 @@ export default function Home() {
           <div className="text-center bg-orange-50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Serving Outer London Areas</h3>
             <p className="text-gray-700 mb-4">
-              In addition to Croydon and Swindon, we provide professional roofing services across outer London 
+              We provide professional roofing services across London and outer areas within a 30-mile radius, 
               including Surrey, Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire. Our team of 
               certified roofers is ready to help with all your roofing needs.
             </p>
@@ -346,7 +346,7 @@ export default function Home() {
             Ready to Start Your Project?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Get in touch today for a free, no-obligation quote. Our team is ready to help with all your roofing needs in Croydon, Swindon, and outer London areas.
+            Get in touch today for a free, no-obligation quote. Our team is ready to help with all your roofing needs in Croydon and outer London areas (up to 30 miles).
           </p>
           <Link
             href="/contact"

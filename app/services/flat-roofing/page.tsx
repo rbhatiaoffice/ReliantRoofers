@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Flat Roofing in Croydon & Swindon | Professional Roofers',
-  description: 'Professional flat roofing installation and repairs in Croydon, Swindon, and outer London. Specialists in felt, torch-on, and GRP fibreglass flat roof systems. Free quotes.',
-  keywords: 'flat roofing Croydon, flat roofing Swindon, GRP roofing outer London, felt roofing Croydon, torch-on roofing Swindon',
+  title: 'Flat Roofing in Croydon & Outer London | Professional Roofers',
+  description: 'Professional flat roofing installation and repairs in Croydon and outer London (up to 30 miles). Specialists in felt, torch-on, and GRP fibreglass flat roof systems. Free quotes.',
+  keywords: 'flat roofing Croydon, flat roofing outer London, GRP roofing outer London, felt roofing Croydon, torch-on roofing outer London',
 };
 
 export default function FlatRoofingPage() {

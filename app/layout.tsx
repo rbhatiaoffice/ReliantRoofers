@@ -15,12 +15,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Reliant Roofers - Expert Roofers in Croydon & Swindon | Roofing Services Outer London",
-  description: "Professional roofing services in Croydon, Swindon, and outer London areas. Expert roofers for pitched roofing, flat roofing, roof repairs, loft conversions, and new construction. Free quotes, fully insured, 15+ years experience.",
-  keywords: "roofers Croydon, roofing services Swindon, roof repairs Croydon, pitched roofing Swindon, flat roofing Croydon, roofers outer London, Croydon roofers, Swindon roofers, roof repairs outer London, loft conversions Croydon, emergency roof repairs Swindon, professional roofers Croydon, roofing contractors Swindon, roof installation Croydon, gutter repairs Swindon",
+  title: "Reliant Roofers - Expert Roofers in Croydon & Outer London | Roofing Services",
+  description: "Professional roofing services in Croydon and outer London areas (up to 30 miles). Expert roofers for pitched roofing, flat roofing, roof repairs, loft conversions, and new construction. Free quotes, fully insured, 15+ years experience.",
+  keywords: "roofers Croydon, roofing services outer London, roof repairs Croydon, pitched roofing outer London, flat roofing Croydon, roofers outer London, Croydon roofers, roof repairs outer London, loft conversions Croydon, emergency roof repairs outer London, professional roofers Croydon, roofing contractors outer London, roof installation Croydon, gutter repairs outer London",
   openGraph: {
-    title: "Reliant Roofers - Expert Roofers in Croydon & Swindon",
-    description: "Professional roofing services in Croydon, Swindon, and outer London. Expert roofers with 15+ years experience. Free quotes, fully insured.",
+    title: "Reliant Roofers - Expert Roofers in Croydon & Outer London",
+    description: "Professional roofing services in Croydon and outer London (up to 30 miles). Expert roofers with 15+ years experience. Free quotes, fully insured.",
     type: "website",
     url: "https://reliantroofers.co.uk",
   },
@@ -35,7 +35,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Reliant Roofers',
-    description: 'Professional roofing services in Croydon, Swindon, and outer London areas. Expert roofers for all roofing needs.',
+    description: 'Professional roofing services in Croydon and outer London areas (up to 30 miles radius). Expert roofers for all roofing needs.',
     url: 'https://reliantroofers.co.uk',
     telephone: '+447552386343',
     email: 'rishi.bhatia.office@gmail.com',
@@ -49,10 +49,6 @@ export default function RootLayout({
       {
         '@type': 'City',
         name: 'Croydon',
-      },
-      {
-        '@type': 'City',
-        name: 'Swindon',
       },
       {
         '@type': 'City',

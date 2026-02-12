@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Loft Conversions in Croydon & Swindon | Expert Roofers',
-  description: 'Expert roofing solutions for loft conversions in Croydon, Swindon, and outer London. Specialists in structural alterations, RSJs, dormer construction, and roof raising. Free quotes.',
-  keywords: 'loft conversions Croydon, loft conversions Swindon, dormer construction outer London, roof raising Croydon, structural roofing Swindon',
+  title: 'Loft Conversions in Croydon & Outer London | Expert Roofers',
+  description: 'Expert roofing solutions for loft conversions in Croydon and outer London (up to 30 miles). Specialists in structural alterations, RSJs, dormer construction, and roof raising. Free quotes.',
+  keywords: 'loft conversions Croydon, loft conversions outer London, dormer construction outer London, roof raising Croydon, structural roofing outer London',
 };
 
 export default function LoftConversionsPage() {
