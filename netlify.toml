@@ -2,6 +2,15 @@
   command = "npm run build"
   publish = ".next"
 
+# Configure secrets scanning to allow NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+# This key is intentionally exposed to the client-side for Google Maps
+[build.environment]
+  # Omit the Google Maps API key from secrets scanning
+  # It's a client-side key (NEXT_PUBLIC_) and is meant to be in the build output
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_GOOGLE_MAPS_API_KEY"
+  # Disable smart detection for Google Maps API key pattern
+  SECRETS_SCAN_SMART_DETECTION_OMIT_VALUES = "AIzaSy*"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
