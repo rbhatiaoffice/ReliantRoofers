@@ -31,7 +31,7 @@ export default function GoogleMap({
     if (window.google && window.google.maps) {
       initializeMap();
     } else {
-      // Load Google Maps script
+      // Load Google Maps script with async and defer for best performance
       const existingScript = document.querySelector(`script[src*="maps.googleapis.com"]`);
       if (existingScript) {
         existingScript.addEventListener('load', initializeMap);
@@ -40,10 +40,13 @@ export default function GoogleMap({
         }
       } else {
         const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places,marker&loading=async`;
         script.async = true;
         script.defer = true;
         script.onload = initializeMap;
+        script.onerror = () => {
+          console.error('Failed to load Google Maps. Please check that Maps JavaScript API is enabled in Google Cloud Console.');
+        };
         document.head.appendChild(script);
       }
     }
@@ -66,12 +69,22 @@ export default function GoogleMap({
         ],
       });
 
-      // Add marker
-      new window.google.maps.Marker({
-        position: center,
-        map,
-        title: 'Reliant Roofers',
-      });
+      // Add marker using AdvancedMarkerElement (recommended) or fallback to Marker
+      if (window.google.maps.marker && window.google.maps.marker.AdvancedMarkerElement) {
+        // Use AdvancedMarkerElement (recommended)
+        new window.google.maps.marker.AdvancedMarkerElement({
+          map,
+          position: center,
+          title: 'Reliant Roofers',
+        });
+      } else {
+        // Fallback to classic Marker (deprecated but still works)
+        new window.google.maps.Marker({
+          position: center,
+          map,
+          title: 'Reliant Roofers',
+        });
+      }
 
       mapInstanceRef.current = map;
     }
