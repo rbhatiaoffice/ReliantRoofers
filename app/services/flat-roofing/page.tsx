@@ -2,8 +2,9 @@ import { Metadata } from 'next';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Flat Roofing Services | Reliant Roofers',
-  description: 'Professional flat roofing installation and repairs. Specialists in felt, torch-on, and GRP fibreglass flat roof systems in London and surrounding areas.',
+  title: 'Flat Roofing in Croydon & Swindon | Professional Roofers',
+  description: 'Professional flat roofing installation and repairs in Croydon, Swindon, and outer London. Specialists in felt, torch-on, and GRP fibreglass flat roof systems. Free quotes.',
+  keywords: 'flat roofing Croydon, flat roofing Swindon, GRP roofing outer London, felt roofing Croydon, torch-on roofing Swindon',
 };
 
 export default function FlatRoofingPage() {

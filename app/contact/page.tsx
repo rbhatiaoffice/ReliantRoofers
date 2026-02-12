@@ -3,8 +3,9 @@ import ContactForm from '@/components/ContactForm';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Reliant Roofers',
-  description: 'Get in touch with Reliant Roofers for a free quote. Contact us by phone, email, or use our contact form. We serve customers in London and surrounding areas.',
+  title: 'Contact Reliant Roofers - Roofers in Croydon & Swindon',
+  description: 'Get in touch with Reliant Roofers for a free quote. Expert roofers serving Croydon, Swindon, and outer London areas. Contact us by phone, email, or use our contact form.',
+  keywords: 'contact roofers Croydon, roofing quote Swindon, roofers near me, emergency roofers outer London',
 };
 
 export default function ContactPage() {
@@ -59,9 +60,9 @@ export default function ContactPage() {
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-slate-800 mr-4 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Service Area</h3>
-                    <p className="text-gray-700">London & Surrounding Areas</p>
-                    <p className="text-sm text-gray-600 mt-1">Serving London, Surrey, Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Service Areas</h3>
+                    <p className="text-gray-700">Croydon, Swindon & Outer London</p>
+                    <p className="text-sm text-gray-600 mt-1">Serving Croydon, Swindon, outer London, Surrey, Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire</p>
                   </div>
                 </div>
 

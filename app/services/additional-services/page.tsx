@@ -2,8 +2,9 @@ import { Metadata } from 'next';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Additional Roofing Services | Reliant Roofers',
-  description: 'Comprehensive additional roofing services including leadwork, flashings, fascias, soffits, guttering, Velux windows, and insulation in London and surrounding areas.',
+  title: 'Additional Roofing Services in Croydon & Swindon | Reliant Roofers',
+  description: 'Comprehensive additional roofing services in Croydon, Swindon, and outer London including leadwork, flashings, fascias, soffits, guttering, Velux windows, and insulation.',
+  keywords: 'gutter repairs Croydon, fascia soffit Swindon, leadwork outer London, Velux windows Croydon, roofing accessories Swindon',
 };
 
 export default function AdditionalServicesPage() {

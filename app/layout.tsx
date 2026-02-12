@@ -15,13 +15,14 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Reliant Roofers - Professional Roofing Services in London & Surrounding Areas",
-  description: "Trusted roofing experts providing pitched and flat roofing, repairs, loft conversions, and new construction services in London and surrounding areas. Get your free quote today.",
-  keywords: "roofing, roofers, pitched roofing, flat roofing, roof repairs, loft conversions, London roofers",
+  title: "Reliant Roofers - Expert Roofers in Croydon & Swindon | Roofing Services Outer London",
+  description: "Professional roofing services in Croydon, Swindon, and outer London areas. Expert roofers for pitched roofing, flat roofing, roof repairs, loft conversions, and new construction. Free quotes, fully insured, 15+ years experience.",
+  keywords: "roofers Croydon, roofing services Swindon, roof repairs Croydon, pitched roofing Swindon, flat roofing Croydon, roofers outer London, Croydon roofers, Swindon roofers, roof repairs outer London, loft conversions Croydon, emergency roof repairs Swindon, professional roofers Croydon, roofing contractors Swindon, roof installation Croydon, gutter repairs Swindon",
   openGraph: {
-    title: "Reliant Roofers - Professional Roofing Services",
-    description: "Trusted roofing experts across the UK",
+    title: "Reliant Roofers - Expert Roofers in Croydon & Swindon",
+    description: "Professional roofing services in Croydon, Swindon, and outer London. Expert roofers with 15+ years experience. Free quotes, fully insured.",
     type: "website",
+    url: "https://reliantroofers.co.uk",
   },
 };
 
@@ -34,10 +35,10 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Reliant Roofers',
-    description: 'Professional roofing services in London and surrounding areas',
+    description: 'Professional roofing services in Croydon, Swindon, and outer London areas. Expert roofers for all roofing needs.',
     url: 'https://reliantroofers.co.uk',
-        telephone: '+447552386343',
-        email: 'rishi.bhatia.office@gmail.com',
+    telephone: '+447552386343',
+    email: 'rishi.bhatia.office@gmail.com',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'GB',
@@ -47,11 +48,23 @@ export default function RootLayout({
     areaServed: [
       {
         '@type': 'City',
+        name: 'Croydon',
+      },
+      {
+        '@type': 'City',
+        name: 'Swindon',
+      },
+      {
+        '@type': 'City',
         name: 'London',
       },
       {
         '@type': 'City',
         name: 'Greater London',
+      },
+      {
+        '@type': 'City',
+        name: 'Outer London',
       },
       {
         '@type': 'City',
@@ -84,8 +97,16 @@ export default function RootLayout({
       'Roof Repairs',
       'Loft Conversions',
       'New Roof Construction',
+      'Emergency Roof Repairs',
+      'Gutter Repairs',
+      'Roof Maintenance',
     ],
     priceRange: '$$',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '150',
+    },
   };
 
   return (

@@ -60,12 +60,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Professional Roofing Services
-              <span className="block mt-2 text-orange-400">You Can Trust</span>
+              Expert Roofers in Croydon & Swindon
+              <span className="block mt-2 text-orange-400">Professional Roofing Services You Can Trust</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-              Expert roofers providing quality pitched and flat roofing, repairs, and new construction 
-              services in London and surrounding areas. Get your free quote today.
+              Trusted roofing experts serving Croydon, Swindon, and outer London areas. Expert roofers for pitched roofing, flat roofing, roof repairs, loft conversions, and emergency services. Get your free quote today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -95,8 +94,10 @@ export default function Home() {
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               With over 15 years of experience, Reliant Roofers is your trusted partner for all roofing 
-              needs. We specialize in both traditional and modern roofing solutions, delivering quality 
-              craftsmanship and exceptional customer service in London and surrounding areas.
+              needs in Croydon, Swindon, and outer London areas. We specialize in both traditional and modern 
+              roofing solutions, delivering quality craftsmanship and exceptional customer service. Whether 
+              you need roof repairs in Croydon, flat roofing in Swindon, or loft conversions across outer London, 
+              we&apos;re here to help.
             </p>
           </div>
         </div>
@@ -249,6 +250,95 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Location-Specific Services */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Expert Roofers in Croydon & Swindon
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Serving Croydon, Swindon, and outer London areas with professional roofing services
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-gray-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Roofing Services in Croydon</h3>
+              <p className="text-gray-700 mb-4">
+                Reliant Roofers provides comprehensive roofing services throughout Croydon and surrounding areas. 
+                Our expert team specializes in:
+              </p>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>Roof repairs and emergency roofing services in Croydon</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>Pitched roofing installation and repairs in Croydon</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>Flat roofing solutions for Croydon properties</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>Loft conversions and dormer construction in Croydon</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>Gutter repairs and maintenance in Croydon</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Roofing Services in Swindon</h3>
+              <p className="text-gray-700 mb-4">
+                Professional roofing contractors serving Swindon and surrounding areas. Our experienced 
+                roofers offer:
+              </p>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>Expert roof repairs and maintenance in Swindon</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>New roof construction and installation in Swindon</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>Flat roofing systems for Swindon homes and businesses</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>Pitched roofing with premium materials in Swindon</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-600 mr-2">✓</span>
+                  <span>24/7 emergency roof repairs in Swindon</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="text-center bg-orange-50 p-8 rounded-lg">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Serving Outer London Areas</h3>
+            <p className="text-gray-700 mb-4">
+              In addition to Croydon and Swindon, we provide professional roofing services across outer London 
+              including Surrey, Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire. Our team of 
+              certified roofers is ready to help with all your roofing needs.
+            </p>
+            <Link
+              href="/contact"
+              className="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2"
+            >
+              Get Free Quote
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Contact CTA */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -256,7 +346,7 @@ export default function Home() {
             Ready to Start Your Project?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Get in touch today for a free, no-obligation quote. Our team is ready to help with all your roofing needs.
+            Get in touch today for a free, no-obligation quote. Our team is ready to help with all your roofing needs in Croydon, Swindon, and outer London areas.
           </p>
           <Link
             href="/contact"

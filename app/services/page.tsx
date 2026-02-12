@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Our Services | Reliant Roofers',
-  description: 'Comprehensive roofing services including pitched roofing, flat roofing, repairs, loft conversions, and new construction in London and surrounding areas.',
+  title: 'Roofing Services in Croydon & Swindon | Reliant Roofers',
+  description: 'Professional roofing services in Croydon, Swindon, and outer London. Expert roofers for pitched roofing, flat roofing, roof repairs, loft conversions, and new construction. Free quotes available.',
+  keywords: 'roofing services Croydon, roofing services Swindon, roofers Croydon, roofers Swindon, roof repairs outer London, pitched roofing Croydon, flat roofing Swindon',
 };
 
 const services = [
@@ -58,9 +59,9 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-800 to-orange-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Roofing Services in Croydon & Swindon</h1>
           <p className="text-xl text-orange-100 max-w-3xl">
-            Comprehensive roofing solutions for residential and commercial properties in London and surrounding areas
+            Comprehensive roofing solutions for residential and commercial properties in Croydon, Swindon, and outer London areas. Expert roofers with 15+ years experience.
           </p>
         </div>
       </section>

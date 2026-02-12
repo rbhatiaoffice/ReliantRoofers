@@ -2,8 +2,9 @@ import { Metadata } from 'next';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Loft Conversions & Structural Work | Reliant Roofers',
-  description: 'Expert roofing solutions for loft conversions. Specialists in structural alterations, RSJs, dormer construction, and roof raising in London and surrounding areas.',
+  title: 'Loft Conversions in Croydon & Swindon | Expert Roofers',
+  description: 'Expert roofing solutions for loft conversions in Croydon, Swindon, and outer London. Specialists in structural alterations, RSJs, dormer construction, and roof raising. Free quotes.',
+  keywords: 'loft conversions Croydon, loft conversions Swindon, dormer construction outer London, roof raising Croydon, structural roofing Swindon',
 };
 
 export default function LoftConversionsPage() {

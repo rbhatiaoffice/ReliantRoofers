@@ -2,8 +2,9 @@ import { Metadata } from 'next';
 import ServicePageLayout from '@/components/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'New Roofs & Construction Services | Reliant Roofers',
-  description: 'Complete new roof installations for new builds, extensions, and renovations. Expert timber framing and structural roofing work in London and surrounding areas.',
+  title: 'New Roof Construction in Croydon & Swindon | Expert Roofers',
+  description: 'Complete new roof installations for new builds, extensions, and renovations in Croydon, Swindon, and outer London. Expert timber framing and structural roofing work. Free quotes.',
+  keywords: 'new roof construction Croydon, new roof installation Swindon, roofers outer London, timber framing Croydon, structural roofing Swindon',
 };
 
 export default function NewRoofsConstructionPage() {

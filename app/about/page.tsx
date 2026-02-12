@@ -5,8 +5,9 @@ import ImageSlider from '@/components/ImageSlider';
 import GoogleMap from '@/components/GoogleMap';
 
 export const metadata: Metadata = {
-  title: 'About Us | Reliant Roofers',
-  description: 'Learn about Reliant Roofers - over 15 years of experience providing professional roofing services in London and surrounding areas. Certified, insured, and trusted by thousands.',
+  title: 'About Reliant Roofers - Expert Roofers in Croydon & Swindon',
+  description: 'Reliant Roofers - over 15 years of experience providing professional roofing services in Croydon, Swindon, and outer London areas. Certified, insured, and trusted by thousands of customers.',
+  keywords: 'roofers Croydon, roofers Swindon, professional roofers outer London, roofing company Croydon, roofing contractors Swindon',
 };
 
 export default function AboutPage() {
@@ -160,8 +161,9 @@ export default function AboutPage() {
             <MapPin className="h-12 w-12 mx-auto mb-4 text-orange-300" />
             <h2 className="text-3xl font-bold mb-4">Service Areas</h2>
             <p className="text-xl text-orange-100 max-w-3xl mx-auto">
-              We provide professional roofing services throughout London and surrounding areas including Surrey, 
-              Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire. We&apos;re here to help with all your roofing needs.
+              We provide professional roofing services throughout Croydon, Swindon, and outer London areas including Surrey, 
+              Kent, Essex, Hertfordshire, Buckinghamshire, and Berkshire. Whether you need roof repairs in Croydon, flat roofing 
+              in Swindon, or emergency roof services across outer London, we&apos;re here to help with all your roofing needs.
             </p>
           </div>
           
